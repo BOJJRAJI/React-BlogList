@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+}
+.profile {
+  height: 100px;
+  width: 100px;
+}
+.image-container {
+  text-align: center;
+}
+.name {
+  font-family: 'Roboto';
+  font-size: 23px;
+  color: #12022f;
+  font-weight: 900;
+  text-align: center;
+}
+
+.job {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  color: #9aa5b1;
+  text-align: center;
+}
+.blog-list-container {
+  list-style-type: none;
+  width: 90%;
+  padding-left: 0px;
+}

@@ -1,0 +1,31 @@
+.blog-list {
+  display: flex;
+  flex-direction: column;
+}
+.title-date-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.title {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #12022f;
+  font-weight: 900;
+}
+.date {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  color: #9aa5b1;
+}
+.para {
+  font-family: 'Roboto';
+  font-size: 13px;
+  font-weight: 500;
+  color: #9aa5b1;
+}
+.line {
+  width: 100%;
+  background-color: #616e7c;
+}
