@@ -1,36 +1,40 @@
 import {Link} from 'react-router-dom'
+import {BiSolidDashboard} from 'react-icons/bi'
+import {MdPeopleAlt} from 'react-icons/md'
+import {AiOutlineFileAdd} from 'react-icons/ai'
+import {FaPeopleGroup} from 'react-icons/fa6'
+import {GoProjectRoadmap} from 'react-icons/go'
 
 import './index.css'
 
 const Header = () => (
-  <nav className="header-container">
-    <div className="logo-and-title-container">
-      <img
-        alt="wave"
-        className="logo"
-        src="https://assets.ccbp.in/frontend/react-js/wave-logo-img.png"
-      />
-      <h1 className="title">Wave</h1>
-    </div>
+  <div className="header-container">
+    <h1 className="header-heading">Projects</h1>
+    <div className="types-container">
+      <Link to="/dashboard" className="link">
+        <BiSolidDashboard className="icon" />
+        <p className="text">Dashboard</p>
+      </Link>
 
-    <ul className="nav-items-list">
-      <li className="link-item">
-        <Link className="route-link" to="/">
-          Home
-        </Link>
-      </li>
-      <li className="link-item">
-        <Link className="route-link" to="/about">
-          About
-        </Link>
-      </li>
-      <li className="link-item">
-        <Link className="route-link" to="/contact">
-          Contact
-        </Link>
-      </li>
-    </ul>
-  </nav>
+      <Link to="/clients" className="link">
+        <MdPeopleAlt className="icon" />
+        <p className="text">Client</p>
+      </Link>
+
+      <Link to="/input" className="link">
+        <AiOutlineFileAdd className="icon" />
+        <p className="text">Input</p>
+      </Link>
+      <Link to="/projects" className="link">
+        <GoProjectRoadmap className="icon" />
+        <p className="text">Projects</p>
+      </Link>
+      <Link to="/staff" className="link">
+        <FaPeopleGroup className="icon" />
+        <p className="text">Staff</p>
+      </Link>
+    </div>
+  </div>
 )
 
 export default Header
